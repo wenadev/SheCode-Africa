@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+html,body{margin:0; padding:0;}
+
+.root-container{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c7eef5;
+    color:#fff;
+    overflow-x: hidden;
+}
+
+header{
+    width:100%;
+    flex-shrink: 0;
+    height: auto;
+    background-color: #c7eef5!important;
+    padding: 15px 0;
+}
+
+/*logo*/
+svg{fill:#dd733e; margin-right: 10px;}
+
+/*logo*/
+.navbar-brand{display: flex; align-items: center; font-size: 18px; font-weight: 600; color: #022249!important;}
+
+.navbar-brand #full-stop::after{content:'\002e'; font-size:20px; color:#dd733e; position: relative; left:-6%;} 
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 30px 0;
+}
+
+.navbar{background-color: rgb(85, 189, 202);}
+
+/*navbar background*/
+.bg-light{background-color: #c7eef5!important;}
+
+nav .nav-item{margin:2px 10px 0 0; max-width:130px!important;}
+
+.nav-link{ color: #022249!important; border:2px solid transparent}
+.nav-link:hover{border-bottom: 2px solid #dd733e;}
+
+/*for active header item*/
+.active{border-bottom:2px solid #dd733e;; }
+
+/*navbar button toggler*/
+.navbar-light .navbar-toggler{outline:none!important; background-color: #022249!important; box-shadow: none!important;}
+
+/*navbar button toggler on click*/
+.navbar-light .navbar-toggler:focus{box-shadow: 1px 1px 5px  #26585f!important;}
+/*change header background color*/
+
+/*class to navbar background*/
+.bglight-color{background-color: rgb(2, 34, 73)!important;}
+
+/*class to change color of header text*/
+.navlink-color {color:#55bdca!important}
+
+/*navbar toggler*/
+.toggle-icon{color:#55bdca}
+
+section{
+    flex:1 0 auto;
+    height:auto;
+    overflow: hidden; 
+}
+
+/*all buttons on the page*/
+button{outline: none; font-family: 'Poppins';}
+
+/*carousel*/
+.swiper-container {
+    width: 100vw;
+    height: 500px;
+    overflow: hidden; 
+    color:#022249;
+    font-family: 'Crimson Pro'!important;
+    background-color: rgb(2, 34, 73, 0.1);
+}
+
+.carousel-fade{background-color: rgb(2, 34, 73, 0.6); z-index: -1; height:100%; width:100%; position: absolute;  }
+
+.swiper-wrapper{background-color: rgb(2, 34, 73, 0.2);}
+
+.swiper-slide{width:100%; padding:0 50px; position: relative;}
+
+.swiper-slide.one{  background-image: url("assets/weddingg.jpg"); background-size: cover; }
+
+.swiper-slide.two{ background-image: url("assets/baking.jpg"); background-size: cover; }
+
+.swiper-slide.three{  background-image: url("assets/photograph-detail.jpg"); background-size: cover; }
+
+.swiper-slide.four{  background-image: url("assets/event-space.jpg"); background-size: cover; }
+
+.swiper-slide.five{  background-image: url("assets/food.jpg"); background-size: cover; }
+
+.swiper-slide , .caption{
+    text-align: center;
+    font-size: 18px;
+    z-index: 1;
+ 
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width:900px){.caption span{display:none}}
+
+.caption{color: #fff;}
+
+/*biggest text on carousel*/
+.caption h2{font-size:24px; margin-bottom: 17px;  font-family: 'Poppins'!important; font-weight: 600;}
+
+/*smallest text on carousel*/
+.caption p{font-size: 15px; width:70%; text-align: center; margin-bottom: 15px;}
+@media screen and (max-width:900px){.caption p {width:100%}}
+
+/*button on carousel*/
+.caption button{transition:.5s; border: none;color:#fff ;background-color: #dd733e; text-transform:  ; font-family: 'Poppins'; font-size: 12px; padding:10px 0; border-radius: 6px; width:200px}
+
+.caption button:hover{ background-color: rgb(221, 115, 62, 0.9); transform: scale(1.05);} 
+
+/*pagination on first carousel*/
+
+.swiper-pagination-bullet{background-color: #68e7f8;}
+
+.swiper-pagination-bullet-active{
+    background-color:#fff;
+}
+
+/*our offerings*/ /*popular vendors*/
+.second-section, .fifth-section{
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    background: #c7eef5;
+}
+
+
+/*biggest text*/
+.second-section h3{ font-weight: 400; margin-bottom: 35px; color:#022249; font-weight: 600; font-size: 24px;}
+
+.offerings-container, .vendor-container{
+    display:flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width:100%;
+}
+
+/*images in offerings card*/
+.offerings-card, .vendor-card{cursor:pointer; display: flex; flex-direction: column; align-items: center; margin:15px; width:250px; max-width:100%;}
+@media screen and (max-width:700px){.offerings-card, .vendor-card{width:400px}}
+
+.image{height:100px; width:100px; border-radius: 50%; margin-bottom: 18px;}
+
+.image img{width: 100%; height: 100%; border-radius: 50%; border: 2px solid #dd733e; object-fit: cover;}
+
+/*offering title- photography, makeup artist etc*/
+.offerings-card{box-shadow: 1px 1px 5px #91adb3; border-radius: 6px;padding:30px 10px;}
+
+.offerings-card:hover{box-shadow: 1px 1px 5px #418c96;;}
+
+.offerings-card h5, .vendor-card h5{font-size: 16px; font-weight: 600;  margin-bottom: 10px; color: #022249;}
+
+.offerings-card p, .vendor-card p{
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Crimson Pro';
+    color:#418c96;
+}
+
+/*download application and find vendor*/
+.third-section, .sixth-section{
+    padding:60px 20px;
+    display: grid;
+    justify-items: center;
+    background: #022249;
+    color: #ffffff;
+}
+
+.third-section h4, .sixth-section h4, .fifth-section h4{ margin-bottom: 25px; text-align: center; font-family: 'Poppins'; color:#dd733e; font-weight: 600;}
+
+.fifth-section h4{color:#022249}
+
+.third-section p, .sixth-section p{ font-size: 13px; width:70%; text-align: center; margin-bottom: 25px;}
+
+.button{width:80%; display:grid; grid-template-columns: 1fr 1fr; grid-gap:15px;}
+@media screen and (max-width:500px){.button{grid-template-columns: 1fr;}}
+
+.button button, .sixth-section button{ transition:.3s;  border: 1px solid #dd733e; background: transparent; color: #dd733e;  font-size: 14px; border-radius: 6px; padding: 10px 0;}
+
+.button button:hover, .sixth-section button:hover{background-color: #dd733e; cursor: pointer; color:#022249}
+
+/*testimonial*/
+.fourth-section{background: #c7eef5; position: relative; padding: 30px 0; overflow: hidden;}
+
+.fourth-section .caption{color:#022249;}
+
+.fourth-section .swiper-slide{background-color: #c7eef5;}
+
+.fourth-section .swiper-slide::before{content:'Testimonial'; position: absolute; top:5%; font-size: 24px; font-family: 'Poppins'; font-weight: 600; }
+
+/*profile image of reviewers*/
+.fourth-section .swiper-slide img{height:120px; border-radius: 50%; margin-bottom: 15px; border: 2px solid #dd733e}
+
+/*review text*/
+.fourth-section .swiper-slide h6{font-size: 12px; font-weight: 600;}
+
+.fourth-section .swiper-container{height:400px!important; background: 	#c7eef5;}
+
+.fourth-section .swiper-pagination-bullet{background-color: #022249;}
+
+.fifth-section{padding: 20px 30px 40px 30px;}
+
+.fifth-section .vendor-card{border-radius: 6px; padding:30px 10px; box-shadow: 1px 1px 5px #859fa3;}
+
+/*ratings on vendor card*/
+.vendor-card span{font-size:12px; display: flex; align-items: center; justify-content: center; max-width: auto;}
+
+.vendor-card h5{ display: flex;}
+
+.vendor-card span img{height:12px; position: relative; bottom:1px}
+
+.vendor-card:hover{box-shadow: 1px 1px 5px #418c96;}
+
+/*button in find a vendor*/
+.sixth-section button{max-width:75%; width:300px}
+
+.attribution { 
+    height:6vh; 
+    flex-shrink:0; 
+    font-size: 14px;  
+    font-weight: 500;
+    text-align: center;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #022249;
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease-in-out; 
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attribution a { color: #fff!important; text-decoration: none; }
+
+/*bullet point*/
+.attribution #bullet-point::before{content:'\2022'; color:#dd733e;}
+
+.attribution:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(233, 233, 233, 0.4),
+      transparent
+    );
+    transition: all 650ms;
+  }
+  
+  .attribution:hover:before {
+    left: 100%;
+  }
