@@ -74,7 +74,9 @@ var mySwiper = new Swiper('.swiper-container', {
         enabled: true,
       },
 
-    
+     autoplay: {
+        delay: 5000,
+      },
   
     // Navigation arrows
     navigation: {
@@ -82,7 +84,6 @@ var mySwiper = new Swiper('.swiper-container', {
       prevEl: '.swiper-button-prev',
     },
   
-    // And if we need scrollbar
     scrollbar: {
       el: '.swiper-scrollbar',
     },
