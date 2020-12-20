@@ -3,16 +3,16 @@
 <h1 align="center">High Fidelity Wireframing</h1>
 
 <div align="center">
-   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+   Solution for a challenge from  <a href="https://www.shecodeafrica.org/" target="_blank">SheCode Africa</a>.
 </div>
 
 <div align="center">
   <h3>
-    <a href="https://high-fidelity-wireframing.netlify.app/">
+    <a href="https://high-fidelity-wireframing.netlify.app/" target="_blank">
       Demo
     </a>
     <span> | </span>
-    <a href="https://dribbble.com/shots/11350923-High-Fidelity-Wireframing/attachments/2963018?mode=media">
+    <a href="https://dribbble.com/shots/11350923-High-Fidelity-Wireframing/attachments/2963018?mode=media" target="_blank">
       Challenge
     </a>
   </h3>
