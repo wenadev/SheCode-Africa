@@ -32,6 +32,7 @@
 - HTML 
 - CSS Grid
 - Flexbox
+- [Swiper.js](https://swiperjs.com/)
 
 
 ## Contact
