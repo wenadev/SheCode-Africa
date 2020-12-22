@@ -38,6 +38,7 @@ nav{
     justify-content: flex-end;
     align-items: flex-end;
     padding: 30px 0;
+    box-shadow: 1px 1px 5px #859fa3;
 }
 
 .navbar{background-color: rgb(85, 189, 202);}
@@ -151,7 +152,7 @@ button{outline: none; font-family: 'Poppins';}
 
 /*our offerings*/ /*popular vendors*/
 .second-section, .fifth-section{
-    padding: 60px 30px;
+    padding: 80px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,18 +195,18 @@ button{outline: none; font-family: 'Poppins';}
 
 /*download application and find vendor*/
 .third-section, .sixth-section{
-    padding:60px 20px;
+    padding:90px 20px;
     display: grid;
     justify-items: center;
     background: #022249;
     color: #ffffff;
 }
 
-.third-section h4, .sixth-section h4, .fifth-section h4{ margin-bottom: 25px; text-align: center; font-family: 'Poppins'; color:#dd733e; font-weight: 600;}
+.third-section h4, .sixth-section h4, .fifth-section h4{ margin-bottom: 35px; text-align: center; font-family: 'Poppins'; color:#dd733e; font-weight: 600;}
 
 .fifth-section h4{color:#022249}
 
-.third-section p, .sixth-section p{ font-size: 13px; width:70%; text-align: center; margin-bottom: 25px;}
+.third-section p, .sixth-section p{ font-size: 13px; width:70%; text-align: center; margin-bottom: 35px;}
 
 .button{width:80%; display:grid; grid-template-columns: 1fr 1fr; grid-gap:15px;}
 @media screen and (max-width:500px){.button{grid-template-columns: 1fr;}}
@@ -215,7 +216,7 @@ button{outline: none; font-family: 'Poppins';}
 .button button:hover, .sixth-section button:hover{background-color: #dd733e; cursor: pointer; color:#022249}
 
 /*testimonial*/
-.fourth-section{background: #c7eef5; position: relative; padding: 30px 0; overflow: hidden;}
+.fourth-section{background: #c7eef5; position: relative; padding: 60px 0; overflow: hidden;}
 
 .fourth-section .caption{color:#022249;}
 
@@ -233,7 +234,7 @@ button{outline: none; font-family: 'Poppins';}
 
 .fourth-section .swiper-pagination-bullet{background-color: #022249;}
 
-.fifth-section{padding: 20px 30px 40px 30px;}
+.fifth-section{padding: 80px 30px 40px 30px;}
 
 .fifth-section .vendor-card{border-radius: 6px; padding:30px 10px; box-shadow: 1px 1px 5px #859fa3;}
 
