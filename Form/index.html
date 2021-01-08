@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Register to work with us</title>
+
+</head>
+<body>
+  <div class="root-container">
+    <section>
+      <div class="content">
+        <div class="content-body">  
+          <div class="form-container">
+            <form name="work-together">
+                <h1>Let's work together</h1>
+                <p>We'd love to hear from you! Send us a message using the form opposite, or email us. 
+                    We'd love to hear from you! Send us a message usig the form opposite, or email us</p>
+
+                <div class="one"> 
+                    <div class="input-group"> 
+                        <label>First name</label><br/>
+                        <input name="input" class="input-field" type="text" pattern="^[A-Za-z -]+$" title="Not valid. Alphabets only" > 
+                        <p class="error">Please review your first name</p>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Last name</label><br/>
+                        <input name="input" class="input-field" type="text" pattern="^[A-Za-z -]+$" title="Not valid. Alphabets only" >
+                        <p class="error">Please review your last name</p>
+                    </div>
+                </div>
+
+                <div class="input-group"> 
+                    <label>Email</label><br/>
+                    <input name="input" class="input-field" type="email" > 
+                    <p class="error">Please review your email</p>
+                </div>
+
+                <div class="input-group"> 
+                    <label>Company</label><br/>
+                    <input name="input" class="input-field" type="text" 
+                        pattern="^[A-Za-z -]+$" title="Not valid. Alphabets only" > 
+                        <p class="error">Please review your company name</p>
+                </div>
+
+                <div class="input-group"> 
+                    <label>Phone</label><br/>
+                    <input name="input" class="input-field" type="tel"  
+                    pattern="[0-9]{11}" title="Length of phone number should be 11" > 
+                    <p class="error">Please review your phone number</p>
+                </div>
+                
+                <div class="input-group"> 
+                    <label>How can we help you?</label><br/>
+                    <textarea name="input" class="input-field" type="text" ></textarea>
+                    <p class="error">Please review your comments</p>
+                </div>
+
+                <div class="input-group radio"> 
+                    <label>Expected budget</label>
+
+                    <div>
+                        <input type = "radio" name = "budget" id = "sizeSmall" value = "small" />
+                        <label for = "sizeSmall">Less than $25K</label>
+                    </div>
+    
+                    <div>
+                        <input type = "radio" name = "budget" id = "sizeMed"  value = "medium" />
+                        <label for = "sizeSmall">$25K - $50K</label>
+                    </div>
+    
+                    <div>
+                        <input type = "radio" name = "budget" id = "sizeSmall" value = "small"  />
+                        <label for = "sizeSmall">$50K - $100K</label>
+                    </div>
+                    
+                    <div>
+                        <input type = "radio" name = "budget" id = "sizeSmall" value = "small"  />
+                        <label for = "sizeSmall">$100K+</label>
+                    </div>
+                    <p class="error budget">Please select your budget</p>
+                </div>
+
+                <div class="input-group"> 
+                    <label>How did you hear about us?</label><br/>
+                    <input name="input" class="input-field" type="text" 
+                    pattern="^[A-Za-z -]+$" title="Not valid. Alphabets only" > 
+                    <p class="error">Please review your comments</p>
+                </div>
+
+                <button type="submit" id="submit">Submit</button>
+            </form>
+          </div>
+
+          <div class="image">
+            <img src="office.jpg" alt=" office space image">
+          </div>
+        </div>
+        </div>
+    </section>
+  
+    <footer class="attribution">
+        <p><a target="_blank" href="https://wenadev-portfolio.web.app/">wena <span id="bullet-point"></span> dev</span></a></p> 
+      </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

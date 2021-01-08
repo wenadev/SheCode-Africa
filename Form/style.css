@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html,body{margin:0; padding:0;}
+
+.root-container{
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0 40px;
+    position: relative;
+    overflow: hidden;
+}@media screen and (max-width:1000px){.root-container{ padding:0 15px;}}
+
+section{
+    min-height: 80vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 0px 0 0 0;
+}
+
+.content{
+    flex:1 0 auto;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.content-body{
+    width:100%;
+    display:flex;
+    padding:20px;
+}@media screen and (max-width:1000px){
+    .content-body{flex-direction: column-reverse;} 
+    .form-container, .image{width:100%!important}
+    .one{flex-direction: column;}
+    .one .input-group{width: 100%;}
+}
+
+.form-container, .image{width:50%;}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-origin: content-box;
+    padding-top: 20px;
+}
+
+.image img{width: 100%; height:100%; object-fit: cover;}
+
+ form{
+    margin: 0; 
+    min-height:80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}@media screen and (max-width:1000px){
+    form{
+        min-width:90%;
+        padding-top: 20px;
+    }
+}
+
+form h1{font-size: 35px; font-weight: 800; margin: 0px;}
+form p{margin: 9px 0 5px 0; color:#7a7a7a; width:85%}
+@media screen and (min-width:1000px){
+    .form-container{padding:50px 40px 80px 0; }
+    .content-body{padding-top: 50px;}
+}
+
+form button{
+    background: #5752e1;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Open Sans';
+    padding:15px 40px ;
+    font-size:14px ;
+    outline: none;
+    border: none;;
+    margin-top: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+}@media screen and (max-width:700px){
+    form button{
+        padding: 10px 20px;
+    }
+}
+
+form button:hover{ background: #6b67e2;}
+
+/*Contact Information and Shipping Address*/
+form h3{font-size: 15px;}
+
+form .input-group { 
+    width: 100%; 
+    margin-bottom: 10px; 
+    margin-top: 18px;
+} 
+
+/*First name and Last name inputs*/
+.one{display: flex; justify-content: space-between; width:100%}
+
+.one div{width: 47%;}
+
+.input-group label{ font-size: 14px; font-weight: 600; color:#5a5a5a}
+  
+.input-group .input-field { 
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #828282;
+    width: 100%; 
+    padding: 10px; 
+    text-indent: 10px;
+    text-align: left; 
+    border: 1px solid #c0c0c0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 15px;
+    outline: none; 
+} 
+
+textarea{text-indent: 10px; height:120px}
+
+.input-group.radio{display: flex; flex-direction: column;}
+
+.input-group.radio div{margin-top: 7px;}
+
+.input-group.radio div label{font-weight: normal!important;}
+
+.attribution { 
+    height:6vh; 
+    flex-shrink:0; 
+    margin-top: 5px;
+    font-size: 13px; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.attribution p{line-height: 18px; transition: .5s;}
+.attribution a:hover{color:#4541b4; font-weight: bold;}
+
+.attribution a { color: #5752e1; text-decoration: none; margin-bottom: 5px; }
+
+/*bullet point*/
+.attribution #bullet-point::before{content:'\2022'; color:#dd733e;}
+
+.error{display:none; font-size: 12px; color:#ff0000}
+.error-show{display:inherit!important}
+.error-border{border:1px solid #ff0000}
+
+div.success{display: flex; justify-content: center; align-items: center; height: 100vh;}
+h1#success-text{margin:0 auto; text-align: center; font-size: 50px; width: 80%; border: 3px dashed rgb(87, 82, 225, 0.5); }
