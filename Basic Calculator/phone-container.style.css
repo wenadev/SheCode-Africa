@@ -1,0 +1,208 @@
+.mobile-container{
+	width:100%;
+	height:100%;
+	background-color: black;
+	border-radius:30px;
+	box-shadow: 1px 1px 13px black;
+	 display: flex;
+    flex-direction: column;
+	justify-content: center;
+	padding:0 16px;
+	border:6px solid rgb(55,55,55);
+}
+
+.screen-container{
+	flex:1 0 auto;
+	width:100%;
+	background-color: rgb(10, 10, 10);
+	display: flex;
+	flex-direction: column;
+	border:1px solid rgb(20, 20, 20);
+	border-radius:10px;
+	padding: 3px;
+}
+
+.top-of-screen, .home-button{
+	border-radius: 30px 30px 0 0;
+	background-color: black;
+	height:50px;
+	 flex-shrink: 0;
+}
+
+.top-of-screen{
+	display: flex;
+	flex-direction: column; 
+	justify-content: center;
+	align-items:center;
+}
+
+.sensors, .mic{
+	margin:2px;
+}
+
+.top-of-screen .sensors{
+	display: flex;
+	flex-direction: row;
+}
+
+.sensors .individual-sensor{
+	height:8px;
+	width:8px;
+	background-color: rgb(255,255,255,0.1);
+	border-radius: 50%;
+	margin:3px;
+}
+
+.sensors .camera{
+	background-color: rgb(0,0,255, 0.3);
+}
+
+.sensors .infrared{
+	background-color: rgb(114,47,55,0.4);
+}
+
+.top-of-screen .mic{
+	width:38px;
+	height:4px;
+	background-color: rgb(60,60,60,0.5);
+	border-radius: 5px;
+	border:1px solid rgb(255,255,255,0.1);
+}
+
+.home-button{
+	border-radius: 0 0 15px 15px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-button .large{
+	width:33px;
+	height:33px;
+	border-radius: 50%;
+	background-color:rgb(60,60,60);
+	display: flex;
+	align-items:center;
+	border:1px solid rgb(255,255,255,0.1);
+	border-style:inset;
+}
+
+.home-button .small{
+	margin: 0 auto;
+	border:1px solid black;
+	box-shadow:1px 1px 8px black;
+	background-color: black;
+	border:1px solid rgb(255,255,255,0.2);
+	border-radius: 50%;
+	width:27px;
+	height:27px;	
+}
+
+.screen-container .phone-header{
+	flex-shrink: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#network, #time, #battery{
+	display:flex;
+	justify-content: row;
+	align-items:center;
+	padding:3px;
+	font-size: 0.7rem;
+	font-family:'Source Sans Pro';
+}
+
+#time{margin: 0 auto; font-weight: 600;}
+
+#network-bars{
+	transform: rotate(180deg);
+	display: flex;
+	height:0.8rem;
+}
+
+#network .bars{
+	height:90%;
+	width:3px;
+	background-color: rgb(255,255,255,0.4);
+	margin:0 2px 0 0;
+	border-radius: 1px;
+}
+
+#network .small{
+	background-color:white;
+	height:30%;
+}
+
+#network .medium{
+	background-color:white;
+	height:50%;
+}
+
+#network .large{
+	background-color:white;
+	height:70%;
+}
+
+
+ #network-display p{
+	margin: 3px 0 0 0;
+
+}
+
+#battery{
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+}
+
+#battery p{
+	margin:0;
+	margin-left:2px;
+}
+
+#battery #headphones{
+	height:14px;
+	width:12px;
+	margin:2px 2px 0 2px;
+}
+
+#headphones svg{
+	height:70%;
+	width:100%;
+	fill:white;
+}
+
+#battery p#location-symbol{
+	position: relative;
+	bottom:1px;
+	transform:rotate(30deg);
+}
+
+.battery-body{
+	width:1rem;
+	height:0.5rem;
+	border-radius:3px;
+	border:1.5px solid rgb(255,255,255,0.5);
+	margin-left:4px;
+}
+
+.battery-body #battery-charge{
+	margin-left:.5px;
+	width:0.7rem;
+	height:100%;
+	background-color:#7FFF00;
+	border-radius:1px;
+}
+
+.battery-tip{
+	height:0.3rem;
+	border-radius:50%;
+	border-right:2px solid rgb(255,255,255,0.4);		
+}
+
+.screen-container .application{
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+}
